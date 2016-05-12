@@ -5,15 +5,18 @@ new_word = ""
 word.each_char do |i|
   if !alphabet.include?(i)
     new_word +=i
+  elsif
+  	i == i.upcase
+    new_word += alphabet[alphabet.index(i) - num].upcase
   else
-    new_word += alphabet[alphabet.index(i) - num]  
+    new_word += alphabet[alphabet.index(i) - num].downcase
   end
 end
 
 return new_word
 end
 
-puts cipher("Apples? and Oranges!!!!!!", 2)
+puts cipher("Apples? and Oranges!!!!!!", 5)
 
 =begin
 def caesar_cipher(string, shift=1)
