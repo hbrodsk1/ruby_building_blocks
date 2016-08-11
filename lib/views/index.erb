@@ -1,0 +1,18 @@
+<html>
+	<head></head>
+	<style type="text/css">
+		body {
+			background: <%= color %>
+		}
+	</style>
+	<body>
+		<h3>Enter a word to Cipher-ize</h3>
+		<form>
+			<input type='text' name='word' />
+		<h3>Enter number of letters to shift word</h3>
+			<input type='number' name='num' />
+			<input type='submit' value='Cipherize!' />
+		</form>
+		<h3>Your Cipherized word is: <%= cipherize %></h3>
+	</body>
+</html>
