@@ -1,3 +1,4 @@
+=begin
 def cipher(word, num)
 alphabet = ('a'..'z').to_a.concat(('A'..'Z').to_a)
 new_word = ""
@@ -17,6 +18,7 @@ return new_word
 end
 
 puts cipher("Apples? and Oranges!!!!!!", 5)
+=end
 
 =begin
 def caesar_cipher(string, shift=1)
